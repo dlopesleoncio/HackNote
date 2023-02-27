@@ -25,9 +25,6 @@ public class HackNote {
 //        commandsController.save(teste);
 //        
         
-        CommandsController c = new CommandsController();
-        List comma = c.getall(2);
-        System.out.println(comma.get(0));
         
     }
 }

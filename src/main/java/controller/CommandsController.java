@@ -66,8 +66,8 @@ public class CommandsController {
         
     }
     
-    public List<Commands> getall(int id){
-        String sql = "SELECT * FROM commands WHERE id = ?";
+    public List<Commands> getall(){
+        String sql = "SELECT * FROM commands";
         
         List<Commands> listCommands= new ArrayList<>();
         Connection conn = null;
@@ -78,11 +78,10 @@ public class CommandsController {
             
             conn = ConnectionFactory.getConnection();
             statement = conn.prepareStatement(sql);
-            statement.setInt(1, id);
             resultset = statement.executeQuery();
             
             while(resultset.next()){
-                
+                //criando objetos commandos e preenchendo a lista com esses objetos
                 Commands command = new Commands();
                 command.setId(resultset.getInt("id"));
                 command.setName(resultset.getString("name"));

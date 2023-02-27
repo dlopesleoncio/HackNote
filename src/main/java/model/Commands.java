@@ -13,6 +13,7 @@ public class Commands {
     private String name;
     private String description;
     private String funcion;
+    //private static final Logger LOG = Logger.getLogger(Commands.class.getName());
 
     /*
     public Commands(int id, String name, String description, String funcion) {
@@ -62,7 +63,7 @@ public class Commands {
 
     @Override
     public String toString() {
-        return "Commands{" + "id=" + id + ", name=" + name + ", description=" + description + ", funcion=" + funcion + '}';
+        return this.name;
     }
     
   

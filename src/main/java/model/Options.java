@@ -15,6 +15,7 @@ public class Options {
     private String description;
     private String example;
 
+    /*
     public Options(int id, int id_command, String optionCommand, String description, String example) {
         this.id = id;
         this.id_command = id_command;
@@ -22,7 +23,7 @@ public class Options {
         this.description = description;
         this.example = example;
     }
-
+*/
     public int getId() {
         return id;
     }
